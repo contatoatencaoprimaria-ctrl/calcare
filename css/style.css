@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(img/fundoparque.jpg);
+    /* imagem de fundo da página (caminho relativo: css/ -> ../img/) */
+    background-image: url(../img/fundoparque.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,11 +20,8 @@ body {
 }
 
 .container {
-    background: white;
-    background-image: url(img/estilodevida.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* manter o container legível sobre a imagem de fundo usando um fundo semi-transparente */
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -173,16 +171,6 @@ select:focus {
 }
 
 /* Na imagem de fundo do body:
-
-Corrigi o caminho da imagem para usar ../img/ ao invés de img
-Adicionei background-size: cover para cobrir toda a área
-Adicionei background-position: center para centralizar a imagem
-Adicionei background-repeat: no-repeat para evitar repetição
-Adicionei background-attachment: fixed para manter a imagem fixa durante a rolagem
-Removi o gradiente que estava sobrepondo a imagem
-Na imagem de fundo do .container:
-
-Corrigi o caminho da imagem para usar ../img/ ao invés de img
-Adicionei background-size: cover para cobrir toda a área
-Adicionei background-position: center para centralizar a imagem
-Adicionei background-repeat: no-repeat para evitar repetição */
+Corrigi o caminho da imagem para usar ../img/ ao invés de img (porque o CSS está em css/)
+Usei um fundo semi-transparente no .container para manter legibilidade sobre a imagem
+Se preferir um visual com a imagem também no container, restaure a propriedade background-image com url(../img/estilodevida.png)
