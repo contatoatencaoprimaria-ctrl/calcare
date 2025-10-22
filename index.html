@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+
+        <div class="form-container" id="formContainer">
+            <form id="imcForm">
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" min="0" max="120" required placeholder="Digite sua idade">
+                </div>
+
+                <div class="form-group">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" min="50" max="250" required placeholder="Ex: 175">
+                </div>
+
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" min="20" max="300" step="0.1" required placeholder="Ex: 70.5">
+                </div>
+
+                <button type="button" id="btnCalcular" class="btn-calcular">Calcular IMC</button>
+            </form>
+        </div>
+
+        <div id="resultado" class="resultado hidden">
+            <div class="resultado-content">
+                <div class="imagem-container">
+                    <img id="silhueta" src="" alt="Silhueta" class="silhueta-img">
+                </div>
+                <div class="info-container">
+                    <h2>Seu Resultado:</h2>
+                    <p id="valorImc" class="valor-imc"></p>
+                    <p id="classificacao" class="classificacao"></p>
+                    <p id="faixaPeso" class="faixa-peso"></p>
+                    <button id="btnRecalcular" class="btn-recalcular">Calcular Novamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

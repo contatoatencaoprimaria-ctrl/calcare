@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/fundoparque.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    background-image: url(img/estilodevida.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-calcular {
+    width: 100%;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-calcular:hover {
+    background: #5a6fd8;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultado-content {
+    text-align: center;
+}
+
+.imagem-container {
+    margin-bottom: 20px;
+}
+
+.silhueta-img {
+    width: 200px;
+    height: 300px;
+}
+
+.info-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.valor-imc {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.classificacao {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faixa-peso {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-recalcular {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-recalcular:hover {
+    background: #219652;
+}
+
+/* Cores para as classificações */
+.baixopeso {
+    background-color: #3498db;
+    color: white;
+
+}
+
+.normal {
+    background-color: #27ae60;
+    color: white;
+}
+
+.sobrepeso {
+    background-color: #f39c12;
+    color: white;
+}
+
+.obesidade1 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.obesidade2 {
+    background-color: #8d1406;
+    color: white;
+}
+
+.obesidade3 {
+    background-color: #470b04;
+    color: white;
+}
+
+/* Na imagem de fundo do body:
+
+Corrigi o caminho da imagem para usar ../img/ ao invés de img
+Adicionei background-size: cover para cobrir toda a área
+Adicionei background-position: center para centralizar a imagem
+Adicionei background-repeat: no-repeat para evitar repetição
+Adicionei background-attachment: fixed para manter a imagem fixa durante a rolagem
+Removi o gradiente que estava sobrepondo a imagem
+Na imagem de fundo do .container:
+
+Corrigi o caminho da imagem para usar ../img/ ao invés de img
+Adicionei background-size: cover para cobrir toda a área
+Adicionei background-position: center para centralizar a imagem
+Adicionei background-repeat: no-repeat para evitar repetição */
